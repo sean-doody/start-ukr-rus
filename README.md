@@ -3,7 +3,7 @@
 TBD.
 
 #### Search Terms
-Most search terms were inspired by (https://github.com/echen102)[echen102]'s (https://github.com/echen102/ukraine-russia)[Ukraine and Russia Conflict Tweet IDs Dataset].
+Most search terms were inspired by [echen102](https://github.com/echen102)'s [Ukraine and Russia Conflict Tweet IDs Dataset](https://github.com/echen102/ukraine-russia).
 
 **Russian Search Terms (Google Translate):**
 | Russian        | English                   |
