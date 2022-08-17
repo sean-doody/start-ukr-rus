@@ -6,6 +6,7 @@ TBD.
 Most search terms were inspired by (echen102)[https://github.com/echen102]'s (Ukraine and Russia Conflict Tweet IDs Dataset)[https://github.com/echen102/ukraine-russia].
 
 **Russian Search Terms (Google Translate):**
+|----------------|---------------------------|
 | Украина        | Ukraine                   |
 | украины        | Ukraine                   |
 | Україна        | Ukraine                   |
@@ -17,3 +18,4 @@ Most search terms were inspired by (echen102)[https://github.com/echen102]'s (Uk
 | КГБ            | KGB                       |
 | кгб            | KGB                       |
 | своихнебросаем | "We don't abandon or own" |
+|----------------|---------------------------|
