@@ -2,6 +2,20 @@
 ---
 TBD.
 
+### Battle Names for `ArgumentParser`:
+
+| Battle                                        | Parser                       |
+|-----------------------------------------------|------------------------------|
+| Battle of Kherson                             | `kherson`                    |
+| Battle of Kharkiv                             | `kharkiv`                    |
+| Battle of Kyiv                                | `kyiv_kiev`                  |
+| Siege of Mariupol                             | `mariupol`                   |
+| Battle of Melitopol                           | `melitopol`                  |
+| The Battle of Sievierodonetsk and Lysychansk  | `sievierodonetsk_lysychansk` |
+| Battle of Chernihiv                           | `chernihiv`                  |
+| Battle of Lysychansk                          | `lysychansk`                 |
+| Battle of Donets	                            | `donets`                     |
+ 
 #### Search Terms
 Most search terms were inspired by [echen102](https://github.com/echen102)'s [Ukraine and Russia Conflict Tweet IDs Dataset](https://github.com/echen102/ukraine-russia).
 
