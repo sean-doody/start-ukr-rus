@@ -224,9 +224,9 @@ if __name__ == "__main__":
     print("Preapring tweet & author dataframes...")
     tweet_data, author_data = untuple_results_to_df(tweets)
     
-    sample = args.random_sample
+    sample = float(args.random_sample)
     print(f"Generating a {sample*100}% random sample...")
-    tweet_data, author_data = sample_data(tweet_data, author_data, .15)
+    tweet_data, author_data = sample_data(tweet_data, author_data, sample)
 
     print("Saving outputs...")
     outfile = preprocess_tweets_df(tweet_data)
