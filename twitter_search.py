@@ -83,6 +83,28 @@ def make_battle_keywords(battle_name: str):
         search_query = search_query + " " + "lang:en -is:retweet"
         return search_query
 
+def make_civilian_keywords(event_name: str):
+    queries = [
+        "(ukraine {}",
+        "ukrainian {}",
+        "ukrainians {}",
+        "russia {}",
+        "russian {}",
+        "russians {}",
+        "{} massacre",
+        "{} deaths",
+        "{} civilians",
+        "{} civilian",
+        "{} killings"
+        "{} killed"
+    ]
+    search_query = []
+    for q in queries:
+        search_query.append(q.format(event_name))
+    search_query = " OR ".join(search_query)
+    search_query = search_query + " " + "lang:en -is:retweet"
+    return search_query
+
 
 def main():
     try:
@@ -116,14 +138,23 @@ def main():
     
     print("Initializing Twarc")
     api = initiate_twarc()
-    query = make_battle_keywords(events["twitter_search_name"])
+    
+    if sheet == "battles":
+        query = make_battle_keywords(events["twitter_search_name"])
+    elif sheet == "civilians":
+        query = make_civilian_keywords(events["twitter_search_name"])
     
     if events["twitter_search_name"] == "kharkiv":
         dates = kharkiv(events["start"], events["end"])
         long_battle_search(dates, api, sheet, event, query)
     else:
-        start = events["start"] - dt.timedelta(weeks=1)
-        end = events["end"] + dt.timedelta(weeks=1)
+        if sheet == "battles":
+            start = events["start"] - dt.timedelta(weeks=1)
+            end = events["end"] + dt.timedelta(weeks=1)
+        else:
+            start = events["start"]
+            end = events["start"] + dt.timedelta(weeks=1)
+            
         print(f"Search query:\n{query}\n")
         
         timer_start = time.time()
