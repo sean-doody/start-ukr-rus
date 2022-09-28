@@ -95,8 +95,8 @@ def make_civilian_keywords(event_name: str):
         "{} deaths",
         "{} civilians",
         "{} civilian",
-        "{} killings"
-        "{} killed"
+        "{} killings",
+        "{} killed)"
     ]
     search_query = []
     for q in queries:
@@ -152,8 +152,8 @@ def main():
             start = events["start"] - dt.timedelta(weeks=1)
             end = events["end"] + dt.timedelta(weeks=1)
         else:
-            start = events["start"]
-            end = events["start"] + dt.timedelta(weeks=1)
+            start = events["date"]
+            end = events["date"] + dt.timedelta(weeks=1)
             
         print(f"Search query:\n{query}\n")
         
