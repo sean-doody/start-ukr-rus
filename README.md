@@ -35,9 +35,9 @@
 | civ14    | Peremoha post office massacle         | 7/25/2022 | execution    | 5             |
 
 ### Non-English Terms
-Most search terms were inspired by [echen102](https://github.com/echen102)'s [Ukraine and Russia Conflict Tweet IDs Dataset](https://github.com/echen102/ukraine-russia).
+Terms from [echen102](https://github.com/echen102)'s [Ukraine and Russia Conflict Tweet IDs Dataset](https://github.com/echen102/ukraine-russia).
 
-**Russian Search Terms (Google Translate):**
+**Goole Translate**
 | Non-English    | English                   |
 |----------------|---------------------------|
 | Украина        | Ukraine                   |
