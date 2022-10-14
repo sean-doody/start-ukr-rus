@@ -37,7 +37,7 @@
 ### Non-English Terms
 Terms from [echen102](https://github.com/echen102)'s [Ukraine and Russia Conflict Tweet IDs Dataset](https://github.com/echen102/ukraine-russia).
 
-**Goole Translate**
+**Google Translate**
 | Non-English    | English                   |
 |----------------|---------------------------|
 | Украина        | Ukraine                   |
