@@ -1,4 +1,3 @@
-
 import os
 import json
 import gzip
@@ -109,8 +108,12 @@ def extract_author_info(tweet: dict):
         author["location"] = tweet["location"]
     except Exception:
         author["location"] = None
-    
-    author["url"] = tweet["url"]
+        
+    try:
+        author["url"] = tweet["url"]
+    except KeyError:
+        author["url"] = None
+        
     author["profile_image_url"] = tweet["profile_image_url"]
     author["created_at"] = tweet["created_at"]
     author["followers_count"] = tweet["public_metrics"]["followers_count"]
@@ -129,7 +132,6 @@ def extract_tweet_metadata(tweet: dict):
         "id",
         "conversation_id",
         "reply_settings",
-        "source",
         "author_id",
         "created_at",
         "text",
