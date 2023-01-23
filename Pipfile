@@ -17,6 +17,7 @@ seaborn = "*"
 plotly = "*"
 telethon = "*"
 telepathy = "*"
+cryptg = "*"
 
 [dev-packages]
 
