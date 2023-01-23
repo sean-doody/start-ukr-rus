@@ -2,6 +2,7 @@
 
 A project of the Irregular Warfare and Conflict Analysis Group (IWCAG) of the National Consortium for the Study of Terrorism and Responses to Terrorism (START) at the University of Maryland, College Park.
 
+#### Set Up
 This repository uses [pipenv](https://github.com/pypa/pipenv) for environment and package management. It requires Python `3.11`. 
 For setup, first install pipenv with pip:
 
@@ -20,6 +21,10 @@ You can then activate the environment from the working directory with:
 ```bash
 pipenv shell
 ```
+
+#### A Note on Telegram
+
+Use Bellingcat's [fork of snscrape](https://github.com/bellingcat/snscrape) for expanded Telegram capabilities.
 
 ---
 

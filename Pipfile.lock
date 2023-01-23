@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "db8ed7992f879226b36dfff1422f91d1b67848e42690f6ba143bbce63aa62ac6"
+            "sha256": "1bd1991f9a4fda79e7a3f5eb76fd2d63922c754cf757435c49ae28a81c3fcea2"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -332,7 +332,7 @@
                 "sha256:08695f5cb7ed6e0531a20572697297273c47b8cae5a63ffc6d6ed5c201be6e44",
                 "sha256:4f1d9991f5acc0ca119f9d443620b77f9d6b33703e51011c16baf57afb285fc6"
             ],
-            "markers": "platform_system == 'Windows'",
+            "markers": "python_version >= '2.7' and python_version not in '3.0, 3.1, 3.2, 3.3, 3.4, 3.5, 3.6'",
             "version": "==0.4.6"
         },
         "comm": {
@@ -1725,12 +1725,8 @@
             "version": "==1.3.0"
         },
         "snscrape": {
-            "hashes": [
-                "sha256:106bd375d47b683f88e96acbf425747358fd851f5282a91a0fa0c6784f29f2e4",
-                "sha256:194078946ff53c8b2a79db7695dde351819b7849009aa137e26cda924d3ae702"
-            ],
-            "index": "pypi",
-            "version": "==0.5.0.20230113"
+            "git": "https://github.com/bellingcat/snscrape.git",
+            "ref": "40b8d9f26771dee4d2041dec2cf24bcaf6adc02c"
         },
         "soupsieve": {
             "hashes": [

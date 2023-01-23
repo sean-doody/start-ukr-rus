@@ -7,7 +7,6 @@ name = "pypi"
 twarc = "*"
 pandas = "*"
 numpy = "*"
-snscrape = "*"
 tqdm = "*"
 jupyterlab = "*"
 ipykernel = "*"
@@ -18,6 +17,7 @@ plotly = "*"
 telethon = "*"
 telepathy = "*"
 cryptg = "*"
+snscrape = {git = "https://github.com/bellingcat/snscrape.git"}
 
 [dev-packages]
 
