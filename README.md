@@ -1,4 +1,26 @@
 ### Russia-Ukraine Discourse on Twitter Surrounding Significant Conflict Events
+
+A project of the Irregular Warfare and Conflict Analysis Group (IWCAG) of the National Consortium for the Study of Terrorism and Responses to Terrorism (START) at the University of Maryland, College Park.
+
+This repository uses pipenv for environment and package management. It requires Python `3.11`. 
+For setup, first install pipenv with pip:
+
+```bash
+pip install pipenv
+```
+
+Then, to load the environment from the `Pipfile` and `Pipeifle.lock`, run:
+
+```bash
+pipenv install
+```
+
+You can then activate the environment from the working directory with:
+
+```bash
+pipenv shell
+```
+
 ---
 
 ### Battles
