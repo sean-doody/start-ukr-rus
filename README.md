@@ -24,7 +24,7 @@ pipenv shell
 
 #### A Note on Telegram
 
-Use Bellingcat's [fork of snscrape](https://github.com/bellingcat/snscrape) for expanded Telegram capabilities.
+Use Bellingcat's [fork of snscrape](https://github.com/bellingcat/snscrape) for expanded Telegram capabilities pending [merge of Bellingcat's changes](https://github.com/JustAnotherArchivist/snscrape/pull/413) into the official snscrape library.
 
 ---
 
