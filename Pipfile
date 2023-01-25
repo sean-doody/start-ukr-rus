@@ -18,6 +18,7 @@ telethon = "*"
 telepathy = "*"
 cryptg = "*"
 snscrape = {git = "https://github.com/bellingcat/snscrape.git"}
+weibo-scraper = "*"
 
 [dev-packages]
 
