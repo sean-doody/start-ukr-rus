@@ -36,9 +36,9 @@ def main():
     )
 
     parser.add_argument(
-        '-d',
-        '--date_cutoff',
-        help='The date, in string format, to stop collecting posts'
+        '-s',
+        '--start_time',
+        help='The date, in epoch (int) format, to start collecting posts'
     )
 
     parser_args = parser.parse_args()
@@ -52,6 +52,10 @@ def main():
     print('Initializing Twarc')
     api = initiate_twarc()
     
+    # format date:
+    start_time = dt.datetime.fromtimestamp(int(parser_args.start_time))
+    start_time = start_time.strftime('%Y-%m-%dT%H:%M:%SZ')
+    
     print(f'Getting Tweets for {parser_args.account}')
     query = f'from:{parser_args.account}'
     
@@ -59,6 +63,7 @@ def main():
     
     results = api.search_all(
         query=query,
+        start_time=start_time,
         max_results=100
     )
     
@@ -80,7 +85,7 @@ def main():
     runtime = round((end - start)/60, 3)
     
     print(f'Finished!')
-    print(f'Runtime: {runtime} min. | Total Posts Scraped: {counter}')        
+    print(f'Runtime: {runtime} min. | Total Posts Scraped: {n_tweets}')        
     
     
 if __name__ == '__main__':
