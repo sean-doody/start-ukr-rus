@@ -69,7 +69,7 @@ def main():
     runtime = round((end - start)/60, 3)
 
     print(f'Finished!')
-    print(f'Runtime: {runtime} min. | Toal Posts Scraped: {counter}')        
+    print(f'Runtime: {runtime} min. | Total Posts Scraped: {counter}')        
 
 
 if __name__ == '__main__':
