@@ -3,7 +3,8 @@
 A project of the Irregular Warfare and Conflict Analysis Group (IWCAG) of the National Consortium for the Study of Terrorism and Responses to Terrorism (START) at the University of Maryland, College Park.
 
 #### Set Up
-This repository uses [pipenv](https://github.com/pypa/pipenv) for environment and package management. It requires Python `3.11`. 
+This repository uses [pipenv](https://github.com/pypa/pipenv) for environment and package management. It requires [Python 3.11](https://www.python.org/downloads/)
+. 
 For setup, first install pipenv with pip:
 
 ```bash
