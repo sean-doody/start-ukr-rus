@@ -10,7 +10,7 @@ For setup, first install pipenv with pip:
 pip install pipenv
 ```
 
-Then, to load the environment from the `Pipfile` and `Pipeifle.lock`, run:
+Then, to load the environment from the `Pipfile` and `Pipfile.lock`, run:
 
 ```bash
 pipenv install
