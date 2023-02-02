@@ -27,6 +27,12 @@ pipenv shell
 
 Use Bellingcat's [fork of snscrape](https://github.com/bellingcat/snscrape) for expanded Telegram capabilities pending [merge of Bellingcat's changes](https://github.com/JustAnotherArchivist/snscrape/pull/413) into the official snscrape library.
 
+### TODO:
+
+[x] Add Telegram support.
+[x] Add Weibo support.
+[ ] Package scripts into a class object.
+
 ---
 
 ### Battles
