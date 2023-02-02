@@ -29,9 +29,9 @@ Use Bellingcat's [fork of snscrape](https://github.com/bellingcat/snscrape) for 
 
 ### TODO:
 
-[x] Add Telegram support.
-[x] Add Weibo support.
-[ ] Package scripts into a class object.
+- [x] Add Telegram support.
+- [x] Add Weibo support.
+- [ ] Package scripts into a class object.
 
 ---
 
