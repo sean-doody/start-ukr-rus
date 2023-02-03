@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 '''
 @Author: Sean Doody, START
-@Email
+@Email: sdoody1@umd.edu
 '''
 import os
 import argparse
