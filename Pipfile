@@ -20,6 +20,7 @@ cryptg = "*"
 snscrape = {git = "https://github.com/bellingcat/snscrape.git"}
 weibo-scraper = "*"
 openpyxl = "*"
+googletrans = "*"
 
 [dev-packages]
 
