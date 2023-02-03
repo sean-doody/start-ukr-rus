@@ -1,6 +1,4 @@
-### Russia-Ukraine Discourse on Twitter Surrounding Significant Conflict Events
-
-A project of the Irregular Warfare and Conflict Analysis Group (IWCAG) of the National Consortium for the Study of Terrorism and Responses to Terrorism (START) at the University of Maryland, College Park.
+### Russia-Ukraine Discourse on Social Media Surrounding Significant Conflict Events
 
 #### Set Up
 This repository uses [pipenv](https://github.com/pypa/pipenv) for environment and package management. It requires [Python 3.11](https://www.python.org/downloads/)
