@@ -57,13 +57,12 @@ def extract_hashtags(tweet: dict):
     
     
 def extract_tweet_references(tweet: dict):
-    if "referenced_tweets" in tweet:
+    try:
         refs = {}
         for ref in tweet["referenced_tweets"]:
             refs[ref["id"]] = ref["type"]
-            
         return refs
-    else:
+    except TypeError:
         return "original_tweet"
     
     
