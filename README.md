@@ -29,6 +29,7 @@ Use Bellingcat's [fork of snscrape](https://github.com/bellingcat/snscrape) for 
 
 - [x] Add Telegram support.
 - [x] Add Weibo support.
+- [ ] Improved exception handling.
 - [ ] Package scripts into a class object.
 
 ---
