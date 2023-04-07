@@ -22,6 +22,9 @@ weibo-scraper = "*"
 openpyxl = "*"
 googletrans = "*"
 joblib = "*"
+bs4 = "*"
+lxml = "*"
+nltk = "*"
 
 [dev-packages]
 

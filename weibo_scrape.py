@@ -34,7 +34,7 @@ def main():
 
     parser_args = parser.parse_args()
 
-    print(f'Scraping Weibo posts for {parser_args.account} | Date cutoff: {int(parser_args.date_cutoff)}')
+    print(f'Scraping Weibo posts for {parser_args.account}')
 
     # initiate directory for account:
     if not os.path.exists(os.path.join('data', 'weibo', parser_args.account)):
@@ -43,15 +43,18 @@ def main():
         os.mkdir(os.path.join('data', 'weibo', parser_args.account, 'raw'))
 
     # Weibo date format:
-    cutoff = int(parser_args.date_cutoff)
+    if parser_args.date_cutoff is not None:
+        cutoff = int(parser_args.date_cutoff)
+        
     date_format = "%a %b %d %H:%M:%S %z %Y"
 
     counter = 0
     for tweet in tqdm(get_weibo_tweets_by_name(name=parser_args.account, pages=None)):
         tweet_date = int(dt.datetime.strptime(tweet['mblog']['created_at'], date_format).timestamp())
-        if tweet_date < cutoff:
-            print(f'Tweet date ({tweet_date}) is less than cuttoff ({cutoff}): stopping collection!')
-            break
+        if parser_args.date_cutoff is not None:
+            if tweet_date < cutoff:
+                print(f'Tweet date ({tweet_date}) is less than cuttoff ({cutoff}): stopping collection!')
+                break
         else:
             with gzip.open(
                 os.path.join(
